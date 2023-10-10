@@ -35,7 +35,9 @@ APPLICATIONS = [
 
 ### Model sql util
 By python model output table sql
-python ./core/utils/tortoise_util/get_db_sql.py
+
+run
+```python ./core/utils/tortoise_util/get_db_sql.py```
 ```
 class TestTable(BaseDBModel, BaseCreatedUpdatedAtModel):
     name =fields.CharField(max_length=10)
