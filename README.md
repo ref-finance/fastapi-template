@@ -3,16 +3,19 @@ Pthon 3.10 +
 
 ## run script
 python -m venv venv
+
 source ./venv/bin/activate
+
 pip install -r requirements.txt
 
 create_your app into ./apps file
+
 add app name into settings.config file
 ```python
 APPLICATIONS = [
     'test_app'
 ]
-```
+``` 
 
 
 ## Integrated functions
