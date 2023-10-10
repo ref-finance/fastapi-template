@@ -54,6 +54,16 @@ CREATE TABLE "test_table" (
 );
 ```
 
+### API rate limiter
+config a api 100 minute
+```
+limiter = get_limiter()
+@router.get('/cool', tags=['test'])
+@limiter.limit('100/minute')
+async def test(request: Request):
+    pass
+```
+
 ### Celery
 celery beat 
 

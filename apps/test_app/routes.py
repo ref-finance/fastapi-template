@@ -10,9 +10,9 @@ import logging
 from apps.test_app.models import TestTable
 
 logger = logging.getLogger(__name__)
-limiter = get_limiter()
 router = APIRouter(prefix="/api/test")
 
+limiter = get_limiter()
 @router.get('/cool', tags=['test'])
 @limiter.limit('100/minute')
 async def test(request: Request):
